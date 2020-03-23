@@ -1,0 +1,43 @@
+GET {{apiAddress}}/users
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST {{apiAddress}}/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "Joe",
+  "role": "developer"
+}
+
+###
+GET {{apiAddress}}/users/5e75ad37552b3621807ecc6d
+Accept: */*
+Cache-Control: no-cache
+
+###
+PUT {{apiAddress}}/users/5e75ad37552b3621807ecc6d
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "Mike",
+  "role": "team leader"
+}
+
+###
+PATCH {{apiAddress}}/users/5e78b03a552b3605d8e75f02
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "role": "tester"
+}
+
+###
